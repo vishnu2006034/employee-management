@@ -1,0 +1,233 @@
+2024-10-05 11:12:24,516 - __main__ - ERROR - name 'today' is not defined
+2024-10-05 11:12:24,516 - __main__ - ERROR - 500.html
+2024-10-05 11:16:43,028 - __main__ - ERROR - name 'today' is not defined
+2024-10-05 11:16:43,028 - __main__ - ERROR - 500.html
+2024-10-05 11:33:34,413 - __main__ - ERROR - division by zero
+2024-10-05 11:33:37,069 - __main__ - ERROR - division by zero
+2024-10-05 22:02:34,533 - __main__ - ERROR - (sqlite3.IntegrityError) UNIQUE constraint failed: emp.email
+[SQL: INSERT INTO emp (name, email, contact, age, gender, department, password, picture, attendance, points) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('vishnu', 'vishnu@gmail.com', '9897879797', '34', 'Male', 'HR', '123', 'WhatsApp Image 2024-09-21 at 15.14.25_8236ea16.jpg', None, 100)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-10-05 22:04:18,703 - __main__ - ERROR - (sqlite3.IntegrityError) UNIQUE constraint failed: emp.email
+[SQL: INSERT INTO emp (name, email, contact, age, gender, department, password, picture, attendance, points) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('vishnu', 'vishnu@gmail.com', '9897879797', '34', 'Male', 'HR', '123', 'WhatsApp Image 2024-09-21 at 15.14.25_8236ea16.jpg', None, 100)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-10-05 22:08:07,583 - __main__ - ERROR - (sqlite3.IntegrityError) UNIQUE constraint failed: emp.email
+[SQL: INSERT INTO emp (name, email, contact, age, gender, department, password, picture, attendance, points) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('vishnu', 'vishnu@gmail.com', '9898946958', '34', 'Male', 'IT', '123', 'WhatsApp Image 2024-09-21 at 15.14.25_8236ea16.jpg', None, 100)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-10-05 22:08:12,670 - __main__ - ERROR - (sqlite3.IntegrityError) UNIQUE constraint failed: emp.email
+[SQL: INSERT INTO emp (name, email, contact, age, gender, department, password, picture, attendance, points) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('vishnu', 'vishnu@gmail.com', '9898946958', '34', 'Male', 'IT', '123', 'WhatsApp Image 2024-09-21 at 15.14.25_8236ea16.jpg', None, 100)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-10-05 22:08:33,358 - __main__ - ERROR - (sqlite3.IntegrityError) UNIQUE constraint failed: emp.email
+[SQL: INSERT INTO emp (name, email, contact, age, gender, department, password, picture, attendance, points) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('vishnu', 'vishnu@gmail.com', '9898946958', '34', 'Male', 'IT', '123', 'WhatsApp Image 2024-09-21 at 15.14.25_8236ea16.jpg', None, 100)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-10-05 22:08:55,857 - __main__ - ERROR - (sqlite3.IntegrityError) UNIQUE constraint failed: emp.email
+[SQL: INSERT INTO emp (name, email, contact, age, gender, department, password, picture, attendance, points) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('vishnu', 'vishnu@gmail.com', '9898946958', '34', 'Male', 'IT', '123', 'WhatsApp Image 2024-09-21 at 15.14.25_8236ea16.jpg', None, 100)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-10-05 22:09:50,016 - __main__ - ERROR - (sqlite3.IntegrityError) UNIQUE constraint failed: emp.email
+[SQL: INSERT INTO emp (name, email, contact, age, gender, department, password, picture, attendance, points) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('vishnu', 'vishnu@gmail.com', '9898946958', '34', 'Male', 'IT', '123', 'WhatsApp Image 2024-09-21 at 15.14.25_8236ea16.jpg', None, 100)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-10-05 22:11:34,103 - __main__ - ERROR - (sqlite3.IntegrityError) UNIQUE constraint failed: emp.email
+[SQL: INSERT INTO emp (name, email, contact, age, gender, department, password, picture, attendance, points) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('vishnu', 'vishnu@gmail.com', '9898946958', '34', 'Male', 'IT', '123', 'WhatsApp Image 2024-09-21 at 15.14.25_8236ea16.jpg', None, 100)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-10-05 22:11:37,653 - __main__ - ERROR - (sqlite3.IntegrityError) UNIQUE constraint failed: emp.email
+[SQL: INSERT INTO emp (name, email, contact, age, gender, department, password, picture, attendance, points) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('vishnu', 'vishnu@gmail.com', '9898946958', '34', 'Male', 'IT', '123', 'WhatsApp Image 2024-09-21 at 15.14.25_8236ea16.jpg', None, 100)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-10-05 22:12:10,188 - __main__ - ERROR - (sqlite3.IntegrityError) UNIQUE constraint failed: emp.email
+[SQL: INSERT INTO emp (name, email, contact, age, gender, department, password, picture, attendance, points) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('vishnu', 'vishnu@gmail.com', '9898946958', '34', 'Male', 'IT', '123', 'WhatsApp Image 2024-09-21 at 15.14.25_8236ea16.jpg', None, 100)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-10-05 22:12:13,853 - __main__ - ERROR - (sqlite3.IntegrityError) UNIQUE constraint failed: emp.email
+[SQL: INSERT INTO emp (name, email, contact, age, gender, department, password, picture, attendance, points) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('vishnu', 'vishnu@gmail.com', '9898946958', '34', 'Male', 'IT', '123', 'WhatsApp Image 2024-09-21 at 15.14.25_8236ea16.jpg', None, 100)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-10-05 22:12:30,935 - __main__ - ERROR - (sqlite3.IntegrityError) UNIQUE constraint failed: emp.email
+[SQL: INSERT INTO emp (name, email, contact, age, gender, department, password, picture, attendance, points) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('vishnu', 'vishnu@gmail.com', '9898946958', '34', 'Male', 'IT', '123', 'WhatsApp Image 2024-09-21 at 15.14.25_8236ea16.jpg', None, 100)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-10-05 22:12:35,766 - __main__ - ERROR - (sqlite3.IntegrityError) UNIQUE constraint failed: emp.email
+[SQL: INSERT INTO emp (name, email, contact, age, gender, department, password, picture, attendance, points) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('vishnu', 'vishnu@gmail.com', '9898946958', '34', 'Male', 'IT', '123', 'WhatsApp Image 2024-09-21 at 15.14.25_8236ea16.jpg', None, 100)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-10-06 12:46:50,510 - __main__ - ERROR - 'str' object has no attribute 'query'
+2024-10-06 12:47:04,519 - __main__ - ERROR - 'str' object has no attribute 'query'
+2024-10-06 12:55:08,656 - __main__ - ERROR - main thread is not in main loop
+2024-10-06 13:34:23,488 - __main__ - ERROR - Could not build url for endpoint 'analy'. Did you mean 'manpage' instead?
+2024-10-06 13:34:34,346 - __main__ - ERROR - Could not build url for endpoint 'analy'. Did you mean 'manpage' instead?
+2024-10-06 13:36:56,368 - __main__ - ERROR - Could not build url for endpoint 'analy'. Did you mean 'manpage' instead?
+2024-10-06 13:36:57,250 - __main__ - ERROR - Could not build url for endpoint 'analy'. Did you mean 'manpage' instead?
+2024-10-06 13:36:58,157 - __main__ - ERROR - Could not build url for endpoint 'analy'. Did you mean 'manpage' instead?
+2024-10-06 13:36:58,336 - __main__ - ERROR - Could not build url for endpoint 'analy'. Did you mean 'manpage' instead?
+2024-10-06 13:36:58,506 - __main__ - ERROR - Could not build url for endpoint 'analy'. Did you mean 'manpage' instead?
+2024-10-06 14:54:57,051 - __main__ - ERROR - Entity namespace for "shift" has no property "user_id"
+2024-10-06 15:06:44,013 - __main__ - ERROR - main thread is not in main loop
+2024-10-06 15:08:59,211 - __main__ - ERROR - '__main__.Shiftassign object' has no attribute 'shift'
+2024-10-06 15:14:30,056 - __main__ - ERROR - '__main__.Shiftassign object' has no attribute 'shift'
+2024-10-06 15:24:21,679 - __main__ - ERROR - '__main__.Shiftassign object' has no attribute 'shift'
+2024-10-06 15:25:35,233 - __main__ - ERROR - When initializing mapper Mapper[Shiftassign(shiftassign)], expression 'User ' failed to locate a name ('User '). If this is a class name, consider adding this relationship() to the <class '__main__.Shiftassign'> class after both dependent classes have been defined.
+2024-10-06 15:25:40,874 - __main__ - ERROR - One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Shiftassign(shiftassign)]'. Original exception was: When initializing mapper Mapper[Shiftassign(shiftassign)], expression 'User ' failed to locate a name ('User '). If this is a class name, consider adding this relationship() to the <class '__main__.Shiftassign'> class after both dependent classes have been defined.
+2024-10-06 15:25:40,878 - __main__ - ERROR - One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Shiftassign(shiftassign)]'. Original exception was: When initializing mapper Mapper[Shiftassign(shiftassign)], expression 'User ' failed to locate a name ('User '). If this is a class name, consider adding this relationship() to the <class '__main__.Shiftassign'> class after both dependent classes have been defined.
+2024-10-06 15:25:46,644 - __main__ - ERROR - One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Shiftassign(shiftassign)]'. Original exception was: When initializing mapper Mapper[Shiftassign(shiftassign)], expression 'User ' failed to locate a name ('User '). If this is a class name, consider adding this relationship() to the <class '__main__.Shiftassign'> class after both dependent classes have been defined.
+2024-10-06 15:25:46,646 - __main__ - ERROR - One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Shiftassign(shiftassign)]'. Original exception was: When initializing mapper Mapper[Shiftassign(shiftassign)], expression 'User ' failed to locate a name ('User '). If this is a class name, consider adding this relationship() to the <class '__main__.Shiftassign'> class after both dependent classes have been defined.
+2024-10-06 15:26:03,317 - __main__ - ERROR - '__main__.Shiftassign object' has no attribute 'shift'
+2024-10-06 15:27:23,355 - __main__ - ERROR - '__main__.Shiftassign object' has no attribute 'shift'
+2024-10-06 15:30:43,802 - __main__ - ERROR - Could not determine join condition between parent/child tables on relationship Emp.shifts - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2024-10-06 15:30:43,811 - __main__ - ERROR - One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Emp(emp)]'. Original exception was: Could not determine join condition between parent/child tables on relationship Emp.shifts - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2024-10-06 15:30:49,521 - __main__ - ERROR - One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Emp(emp)]'. Original exception was: Could not determine join condition between parent/child tables on relationship Emp.shifts - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2024-10-06 15:30:49,531 - __main__ - ERROR - One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Emp(emp)]'. Original exception was: Could not determine join condition between parent/child tables on relationship Emp.shifts - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2024-10-06 15:33:03,547 - __main__ - ERROR - Could not determine join condition between parent/child tables on relationship Emp.shifts - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2024-10-06 15:33:06,234 - __main__ - ERROR - One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Emp(emp)]'. Original exception was: Could not determine join condition between parent/child tables on relationship Emp.shifts - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2024-10-06 15:33:06,244 - __main__ - ERROR - One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Emp(emp)]'. Original exception was: Could not determine join condition between parent/child tables on relationship Emp.shifts - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2024-10-06 15:33:39,135 - __main__ - ERROR - Entity namespace for "shiftassign" has no property "user_id"
+2024-10-06 15:34:31,225 - __main__ - ERROR - Entity namespace for "shiftassign" has no property "user_id"
+2024-10-06 15:36:33,631 - __main__ - ERROR - (sqlite3.OperationalError) no such column: shiftassign.user_id
+[SQL: SELECT shiftassign.id AS shiftassign_id, shiftassign.emp_id AS shiftassign_emp_id, shiftassign.shift_id AS shiftassign_shift_id, shiftassign.date AS shiftassign_date, shiftassign.user_id AS shiftassign_user_id 
+FROM shiftassign 
+WHERE shiftassign.user_id = ?]
+[parameters: (1,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-10-06 15:36:35,921 - __main__ - ERROR - (sqlite3.OperationalError) no such column: shiftassign.user_id
+[SQL: SELECT shiftassign.id AS shiftassign_id, shiftassign.emp_id AS shiftassign_emp_id, shiftassign.shift_id AS shiftassign_shift_id, shiftassign.date AS shiftassign_date, shiftassign.user_id AS shiftassign_user_id 
+FROM shiftassign 
+WHERE shiftassign.user_id = ?]
+[parameters: (1,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-10-06 15:36:38,702 - __main__ - ERROR - (sqlite3.OperationalError) no such column: shiftassign.user_id
+[SQL: SELECT shiftassign.id AS shiftassign_id, shiftassign.emp_id AS shiftassign_emp_id, shiftassign.shift_id AS shiftassign_shift_id, shiftassign.date AS shiftassign_date, shiftassign.user_id AS shiftassign_user_id 
+FROM shiftassign 
+WHERE shiftassign.date = ?]
+[parameters: ('2024-10-06',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-10-06 15:36:39,579 - __main__ - ERROR - (sqlite3.OperationalError) no such column: shiftassign.user_id
+[SQL: SELECT shiftassign.id AS shiftassign_id, shiftassign.emp_id AS shiftassign_emp_id, shiftassign.shift_id AS shiftassign_shift_id, shiftassign.date AS shiftassign_date, shiftassign.user_id AS shiftassign_user_id 
+FROM shiftassign 
+WHERE shiftassign.date = ?]
+[parameters: ('2024-10-06',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-10-06 15:36:47,366 - __main__ - ERROR - Foreign key associated with column 'shiftassign.user_id' could not find table 'user' with which to generate a foreign key to target column 'id'
+2024-10-06 15:36:47,368 - __main__ - ERROR - This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: Foreign key associated with column 'shiftassign.user_id' could not find table 'user' with which to generate a foreign key to target column 'id' (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2024-10-06 15:41:09,132 - __main__ - ERROR - '__main__.Shiftassign object' has no attribute 'shift'
+2024-10-06 15:41:09,714 - __main__ - ERROR - '__main__.Shiftassign object' has no attribute 'shift'
+2024-10-06 15:41:11,872 - __main__ - ERROR - '__main__.Shiftassign object' has no attribute 'shift'
+2024-10-06 15:43:31,858 - __main__ - ERROR - '__main__.Shiftassign object' has no attribute 'shift'
+2024-10-06 15:44:23,558 - __main__ - ERROR - '__main__.Shiftassign object' has no attribute 'shift'
+2024-10-06 21:36:01,197 - __main__ - ERROR - (sqlite3.OperationalError) no such column: shiftassign.user_id
+[SQL: SELECT shiftassign.id AS shiftassign_id, shiftassign.emp_id AS shiftassign_emp_id, shiftassign.shift_id AS shiftassign_shift_id, shiftassign.date AS shiftassign_date, shiftassign.user_id AS shiftassign_user_id 
+FROM shiftassign 
+WHERE shiftassign.emp_id = ?]
+[parameters: (1,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-10-06 21:36:14,454 - __main__ - ERROR - Foreign key associated with column 'shiftassign.user_id' could not find table 'user' with which to generate a foreign key to target column 'id'
+2024-10-06 21:36:14,457 - __main__ - ERROR - This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: Foreign key associated with column 'shiftassign.user_id' could not find table 'user' with which to generate a foreign key to target column 'id' (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2024-10-10 11:13:49,217 - __main__ - ERROR - Could not build url for endpoint 'employee profile'. Did you mean 'emppro' instead?
+2024-10-10 11:14:52,333 - __main__ - ERROR - Could not build url for endpoint 'empro'. Did you mean 'emppro' instead?
+2024-10-10 11:15:11,603 - __main__ - ERROR - Could not build url for endpoint 'empro'. Did you mean 'emppro' instead?
+2024-10-10 11:15:13,908 - __main__ - ERROR - Could not build url for endpoint 'empro'. Did you mean 'emppro' instead?
+2024-10-10 11:19:32,606 - __main__ - ERROR - '__main__.Shiftassign object' has no attribute 'shift'
+2024-10-10 11:22:45,561 - __main__ - ERROR - '__main__.Shiftassign object' has no attribute 'shift'
+2024-10-10 11:22:50,369 - __main__ - ERROR - Could not build url for endpoint 'next_page'. Did you mean 'manpage' instead?
+2024-10-10 11:22:52,032 - __main__ - ERROR - Could not build url for endpoint 'next_page'. Did you mean 'manpage' instead?
+2024-10-10 11:22:57,237 - __main__ - ERROR - Could not build url for endpoint 'next_page'. Did you mean 'manpage' instead?
+2024-10-10 11:48:43,585 - __main__ - ERROR - '__main__.Shiftassign object' has no attribute 'shift'
+2024-10-10 11:49:26,295 - __main__ - ERROR - '__main__.Shiftassign object' has no attribute 'shift'
+2024-10-10 11:50:03,473 - __main__ - ERROR - '__main__.Shiftassign object' has no attribute 'shift'
+2024-10-10 11:52:19,953 - __main__ - ERROR - '__main__.Shiftassign object' has no attribute 'shift'
+2024-10-10 11:52:28,393 - __main__ - ERROR - '__main__.Shiftassign object' has no attribute 'shift'
+2024-10-10 11:53:49,607 - __main__ - ERROR - '__main__.Shiftassign object' has no attribute 'shift'
+2024-10-10 11:54:49,868 - __main__ - ERROR - '__main__.Shiftassign object' has no attribute 'shift'
+2025-03-18 13:29:10,292 - __main__ - ERROR - '__main__.Shiftassign object' has no attribute 'shift'
+2025-03-18 13:30:15,091 - __main__ - ERROR - '__main__.Shiftassign object' has no attribute 'shift'
+2025-03-18 13:36:03,309 - __main__ - ERROR - 'list' object has no attribute 'shift_id'
+2025-03-18 13:36:51,209 - __main__ - ERROR - 'list' object has no attribute 'shift_id'
+2025-03-18 13:36:52,700 - __main__ - ERROR - 'list' object has no attribute 'shift_id'
+2025-03-18 13:36:52,957 - __main__ - ERROR - 'list' object has no attribute 'shift_id'
+2025-03-18 13:37:56,264 - __main__ - ERROR - 'list' object has no attribute 'shift_id'
+2025-03-18 13:37:58,343 - __main__ - ERROR - 'list' object has no attribute 'shift_id'
+2025-03-18 13:37:58,780 - __main__ - ERROR - 'list' object has no attribute 'shift_id'
+2025-03-18 13:37:58,981 - __main__ - ERROR - 'list' object has no attribute 'shift_id'
+2025-03-18 13:37:59,181 - __main__ - ERROR - 'list' object has no attribute 'shift_id'
+2025-03-18 13:38:03,513 - __main__ - ERROR - 'list' object has no attribute 'shift_id'
+2025-03-18 13:38:05,986 - __main__ - ERROR - 'list' object has no attribute 'shift_id'
+2025-03-18 13:50:58,561 - __main__ - ERROR - 'list' object has no attribute 'shift_id'
+2025-03-18 14:13:15,025 - __main__ - ERROR - 'list' object has no attribute 'shift_id'
+2025-03-18 14:20:50,286 - __main__ - ERROR - 'list' object has no attribute 'shift_id'
+2025-03-18 14:22:20,674 - __main__ - ERROR - 'list' object has no attribute 'shift_id'
+2025-03-18 14:22:23,840 - __main__ - ERROR - 'list' object has no attribute 'shift_id'
+2025-03-18 14:22:51,319 - __main__ - ERROR - 'list' object has no attribute 'shift_id'
+2025-03-18 14:22:51,792 - __main__ - ERROR - 'list' object has no attribute 'shift_id'
+2025-03-18 14:22:53,705 - __main__ - ERROR - 'list' object has no attribute 'shift_id'
+2025-03-18 14:30:21,085 - __main__ - ERROR - 'list' object has no attribute 'emp_id'
+2025-03-18 14:32:28,591 - __main__ - ERROR - 'list' object has no attribute 'shift_id'
+2025-03-18 14:34:56,780 - __main__ - ERROR - 'list' object has no attribute 'shift_id'
+2025-03-18 14:34:57,456 - __main__ - ERROR - 'list' object has no attribute 'shift_id'
+2025-03-18 14:34:57,630 - __main__ - ERROR - 'list' object has no attribute 'shift_id'
+2025-03-18 14:35:08,217 - __main__ - ERROR - 'list' object has no attribute 'shift_id'
+2025-03-18 14:37:25,080 - __main__ - ERROR - 'list' object has no attribute 'shift_id'
+2025-03-18 14:39:34,798 - __main__ - ERROR - 'list' object has no attribute 'id'
+2025-03-18 14:39:35,260 - __main__ - ERROR - 'list' object has no attribute 'id'
+2025-03-18 14:39:35,417 - __main__ - ERROR - 'list' object has no attribute 'id'
+2025-03-18 14:39:35,594 - __main__ - ERROR - 'list' object has no attribute 'id'
+2025-03-18 14:39:35,762 - __main__ - ERROR - 'list' object has no attribute 'id'
+2025-03-18 14:39:35,984 - __main__ - ERROR - 'list' object has no attribute 'id'
+2025-03-18 14:39:36,164 - __main__ - ERROR - 'list' object has no attribute 'id'
+2025-03-18 14:44:21,358 - __main__ - ERROR - 'list' object has no attribute 'shiftid'
+2025-03-18 14:44:22,123 - __main__ - ERROR - 'list' object has no attribute 'shiftid'
+2025-03-18 14:44:27,217 - __main__ - ERROR - 'list' object has no attribute 'shiftid'
+2025-03-18 14:45:52,341 - __main__ - ERROR - 'list' object has no attribute 'shift_id'
+2025-03-18 14:45:54,655 - __main__ - ERROR - 'list' object has no attribute 'shift_id'
+2025-03-18 14:45:54,819 - __main__ - ERROR - 'list' object has no attribute 'shift_id'
+2025-03-18 14:45:54,983 - __main__ - ERROR - 'list' object has no attribute 'shift_id'
+2025-03-18 14:45:55,139 - __main__ - ERROR - 'list' object has no attribute 'shift_id'
+2025-03-18 16:47:30,846 - __main__ - ERROR - cannot access local variable 'shift' where it is not associated with a value
+2025-03-18 16:48:37,918 - __main__ - ERROR - cannot access local variable 'shift' where it is not associated with a value
+2025-03-18 16:48:38,499 - __main__ - ERROR - cannot access local variable 'shift' where it is not associated with a value
+2025-03-18 16:48:38,665 - __main__ - ERROR - cannot access local variable 'shift' where it is not associated with a value
+2025-03-18 16:48:38,843 - __main__ - ERROR - cannot access local variable 'shift' where it is not associated with a value
+2025-03-18 16:48:39,027 - __main__ - ERROR - cannot access local variable 'shift' where it is not associated with a value
+2025-03-18 16:55:09,900 - __main__ - ERROR - Could not determine join condition between parent/child tables on relationship Emp.shifts - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2025-03-18 16:55:09,908 - __main__ - ERROR - One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Emp(emp)]'. Original exception was: Could not determine join condition between parent/child tables on relationship Emp.shifts - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2025-03-18 16:55:15,737 - __main__ - ERROR - One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Emp(emp)]'. Original exception was: Could not determine join condition between parent/child tables on relationship Emp.shifts - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2025-03-18 16:55:15,740 - __main__ - ERROR - One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Emp(emp)]'. Original exception was: Could not determine join condition between parent/child tables on relationship Emp.shifts - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2025-03-18 20:38:49,013 - __main__ - ERROR - cannot access local variable 'shift' where it is not associated with a value
+2025-03-18 20:41:31,119 - __main__ - ERROR - cannot access local variable 'shift' where it is not associated with a value
+2025-03-18 20:41:32,783 - __main__ - ERROR - cannot access local variable 'shift' where it is not associated with a value
+2025-03-18 20:41:33,161 - __main__ - ERROR - cannot access local variable 'shift' where it is not associated with a value
+2025-03-18 20:41:33,375 - __main__ - ERROR - cannot access local variable 'shift' where it is not associated with a value
+2025-03-18 20:43:14,707 - __main__ - ERROR - session
+2025-03-18 20:43:15,622 - __main__ - ERROR - session
+2025-03-18 20:43:15,969 - __main__ - ERROR - session
+2025-03-18 20:43:25,069 - __main__ - ERROR - session
+2025-03-18 20:43:57,925 - __main__ - ERROR - 'function' object has no attribute 'session'
+2025-03-18 20:44:02,171 - __main__ - ERROR - 'function' object has no attribute 'session'
+2025-03-18 20:44:28,979 - __main__ - ERROR - 'function' object has no attribute 'query'
+2025-03-18 20:45:42,239 - __main__ - ERROR - 'function' object has no attribute 'query'
+2025-03-18 20:46:20,688 - __main__ - ERROR - 'function' object has no attribute 'query'
+2025-03-18 20:48:42,107 - __main__ - ERROR - 'function' object has no attribute 'query'
+2025-03-18 20:48:46,749 - __main__ - ERROR - 'function' object has no attribute 'query'
+2025-03-18 20:52:05,974 - __main__ - ERROR - 'function' object has no attribute 'query'
+2025-03-18 20:52:31,463 - __main__ - ERROR - cannot access local variable 'shifts' where it is not associated with a value
+2025-03-18 20:52:52,136 - __main__ - ERROR - 'function' object has no attribute 'query'
+2025-03-18 20:53:47,961 - __main__ - ERROR - 'function' object has no attribute 'query'
+2025-03-18 20:53:48,542 - __main__ - ERROR - 'function' object has no attribute 'query'
+2025-03-18 20:53:48,726 - __main__ - ERROR - 'function' object has no attribute 'query'
+2025-03-18 20:53:48,897 - __main__ - ERROR - 'function' object has no attribute 'query'
+2025-03-18 20:54:47,814 - __main__ - ERROR - 'function' object has no attribute 'query'
+2025-03-26 16:46:06,002 - __main__ - ERROR - 'function' object has no attribute 'query'
+2025-03-26 16:46:23,191 - __main__ - ERROR - 'function' object has no attribute 'Query'
+2025-03-26 16:53:06,728 - __main__ - ERROR - name 'assigned_shifts' is not defined
+2025-03-26 16:53:20,706 - __main__ - ERROR - 'function' object has no attribute 'query'
+2025-03-26 16:54:44,927 - __main__ - ERROR - 'function' object has no attribute 'query'
+2025-03-26 16:54:49,658 - __main__ - ERROR - 'function' object has no attribute 'query'
+2025-03-31 10:55:47,238 - __main__ - ERROR - 'function' object has no attribute 'query'
+2025-03-31 10:56:16,621 - __main__ - ERROR - division by zero
+2025-04-10 20:52:49,008 - __main__ - ERROR - 'function' object has no attribute 'query'
+2025-04-13 11:15:15,723 - __main__ - ERROR - 'list' object has no attribute 'shift_id'
+2025-04-13 11:20:22,951 - __main__ - ERROR - Query.filter_by() takes 1 positional argument but 2 were given
+2025-04-13 11:20:25,811 - __main__ - ERROR - Query.filter_by() takes 1 positional argument but 2 were given

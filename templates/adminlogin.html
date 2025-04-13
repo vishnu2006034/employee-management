@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Secret Code</title>
+    <style>
+        /* Global styles */
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif; /* Using Roboto font for a modern look */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(to bottom, #007BFF, #007BFF); /* Subtle gradient background */
+            background-size: cover; /* Ensures the gradient fills the entire background */
+        }
+        .bubbles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .bubble {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            animation: bubble-animation 5s linear infinite;
+        }
+
+        @keyframes bubble-animation {
+            0% {
+                transform: translate(0, 0) scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: translate(0, -50px) scale(1.2);
+                opacity: 0.7;
+            }
+            100% {
+                transform: translate(0, -100px) scale(1.5);
+                opacity: 0;
+            }
+        }
+
+        /* Container for the login box */
+        .admin-container {
+            background-color: #ffffff; /* White background for form */
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+            width: 350px; /* Increased width for a more spacious feel */
+            text-align: center;
+        }
+
+        /* Heading for the login box */
+        h1 {
+            color: #212529; /* Darker grey text for heading */
+            font-size: 28px; /* Larger heading font size */
+            font-weight: 600; /* Semi-bold font weight for emphasis */
+            margin-bottom: 35px;
+        }
+
+        /* Input field styling */
+        .secret-input {
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            border-radius: 10px;
+            border: 1px solid #ced4da; /* Light border around input */
+            outline: none;
+            margin-bottom: 25px;
+            background-color: #f9f9f9; /* Light grey input background */
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle inset shadow for depth */
+            transition: box-shadow 0.3s ease; /* Smooth transition for focus effect */
+        }
+
+        .secret-input:focus {
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 5px rgba(0, 123, 255, 0.5); /* Focus effect with blue glow */
+        }
+
+        /* Submit button styling */
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            background-color: #007bff; /* Light blue button */
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            color: #fff; /* White text on the button */
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Button shadow */
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
+        }
+
+        /* Error message styling */
+        .error-message {
+            color: #dc3545; /* Red color for error */
+            font-size: 15px;
+            margin-top: 15px;
+            display: none; /* Initially hidden */
+        }
+    </style>
+</head>
+<body>
+    <div class="admin-container">
+        <h1>Admin Login</h1>
+        <form action="{{url_for('manpage')}}" method="POST">
+            <input name="password" type="password" class="secret-input" placeholder="Enter Secret Code" id="secretCode">
+            <button class="submit-btn">Submit</button>
+            <p class="error-message" id="errorMessage">Invalid code. Please try again.</p>
+
+        </form>
+    
+    </div>
+    <div class="bubbles">
+        <div class="bubble" style="width: 20px; height: 20px; top: 20%; left: 10%; animation-duration: 4s;"></div>
+        <div class="bubble" style="width: 30px; height: 30px; top: 60%; left: 30%; animation-duration: 3s;"></div>
+        <div class="bubble" style="width: 15px; height: 15px; top: 80%; left: 70%; animation-duration: 5s;"></div>
+        <div class="bubble" style="width: 40px; height: 40px; top: 40%; left: 90%; animation-duration: 6s;"></div>
+        <div class="bubble" style="width: 25px; height: 25px; top: 10%; left: 60%; animation-duration: 7s;"></div>
+        <div class="bubble" style="width: 18px; height: 18px; top: 50%; left: 20%; animation-duration: 2s;"></div>
+        <div class="bubble" style="width: 35px; height: 35px; top: 70%; left: 40%; animation-duration: 4s;"></div>
+        <div class="bubble" style="width: 22px; height: 22px; top: 30%; left: 80%; animation-duration: 5s;"></div>
+    </div>
+</body>
+</html>

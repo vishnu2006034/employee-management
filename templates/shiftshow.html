@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <style>
+        body {
+            display: flex; /* Use flexbox for alignment */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            height: 100vh; /* Full viewport height */
+            font-family: Arial, sans-serif;
+            background-color: #1e90ff; /* Bright blue background */
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            background: white; /* White background for the container */
+            padding: 20px;
+            border-radius: 12px; /* Rounded corners */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #1e90ff; /* Blue text color for the heading */
+            margin-bottom: 20px; /* Space below the heading */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center; /* Centered text */
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f0f8ff; /* Light blue for the header */
+            color: #1e90ff; /* Blue text for the header */
+            transition: background-color 0.3s; /* Smooth background transition */
+        }
+
+        td:first-child {
+            min-width: 200px;
+            word-wrap: break-word;
+        }
+
+        td:nth-child(2),
+        td:nth-child(3) {
+            min-width: 150px;
+        }
+
+        tr {
+            transition: background-color 0.3s, transform 0.3s; /* Smooth transition for rows */
+        }
+
+        tr:hover {
+            background-color: #e0f7fa; /* Light blue hover effect */
+            transform: scale(1.01); /* Slight scale effect */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Shift</h1>
+        <table>
+            <thead>
+                <h2>Assigned Shifts</h2>
+                <ul>
+                    {% for shiftassign,shift in shifts %}
+                        <tr>
+                            <td>
+                                {{ shiftassign.date}}
+                            </td>
+                            <td>
+                                {{ shift.name}}
+                            </td>
+                            <td>
+                                {{shift.start_time}}
+                            </td>
+                            <td>
+                                {{shift.end_time}}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </ul>
+            </thead>
+            
+        </table>
+    </div>
+</body>
+</html>

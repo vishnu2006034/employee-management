@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      :root {
+        --basewhite: rgba(255, 255, 255, 1);
+        --blue-gray300: rgba(203, 213, 225, 1);
+        --base-02: rgba(9, 9, 20, 1);
+        --gray-900: rgba(24, 24, 27, 1);
+        --blue-600: rgba(37, 99, 235, 1);
+        --blue-gray50: rgba(248, 250, 252, 1);
+        --blue-gray400: rgba(148, 163, 184, 1);
+        --baseblack: rgba(0, 0, 0, 1);
+        --bold-60px-font-family: "Poppins", Helvetica;
+        --bold-60px-font-weight: 600;
+        --bold-60px-font-size: 60px;
+        --bold-60px-letter-spacing: -2px;
+        --bold-60px-line-height: 66px;
+        --bold-60px-font-style: normal;
+        --regular-18px-font-family: "Poppins", Helvetica;
+        --regular-18px-font-weight: 400;
+        --regular-18px-font-size: 18px;
+        --regular-18px-letter-spacing: 0px;
+        --regular-18px-line-height: 30px;
+        --regular-18px-font-style: normal;
+        --bold-52px-font-family: "Poppins", Helvetica;
+        --bold-52px-font-weight: 600;
+        --bold-52px-font-size: 52px;
+        --bold-52px-letter-spacing: -2px;
+        --bold-52px-line-height: 62px;
+        --bold-52px-font-style: normal;
+        --semi-bold-16px-font-family: "Poppins", Helvetica;
+        --semi-bold-16px-font-weight: 500;
+        --semi-bold-16px-font-size: 16px;
+        --semi-bold-16px-letter-spacing: 0px;
+        --semi-bold-16px-line-height: 24px;
+        --semi-bold-16px-font-style: normal;
+        --regular-13px-font-family: "Poppins", Helvetica;
+        --regular-13px-font-weight: 400;
+        --regular-13px-font-size: 14px;
+        --regular-13px-letter-spacing: 0px;
+        --regular-13px-line-height: 22px;
+        --regular-13px-font-style: normal;
+        --bold-16px-font-family: "Poppins", Helvetica;
+        --bold-16px-font-weight: 600;
+        --bold-16px-font-size: 16px;
+        --bold-16px-letter-spacing: -0.2px;
+        --bold-16px-line-height: 28px;
+        --bold-16px-font-style: normal;
+        --inter-semi-bold-16px-font-family: "Inter", Helvetica;
+        --inter-semi-bold-16px-font-weight: 500;
+        --inter-semi-bold-16px-font-size: 16px;
+        --inter-semi-bold-16px-letter-spacing: 0px;
+        --inter-semi-bold-16px-line-height: 24px;
+        --inter-semi-bold-16px-font-style: normal;
+      }
+
+      .frame {
+        background-color: var(--blue-gray50);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+      }
+
+      .frame .div {
+        background-color: var(--blue-gray50);
+        width: 1600px;
+        height: 858px;
+        position: relative;
+      }
+
+      .frame .overlap-group {
+        position: absolute;
+        width: 709px;
+        height: 858px;
+        top: 0;
+        left: 0;
+      }
+
+      .frame .BG {
+        position: absolute;
+        width: 709px;
+        height: 858px;
+        top: 0;
+        left: 0;
+        background-color: var(--blue-600);
+        background-image: url(./img/mask-group.png);
+        background-size: 100% 100%;
+      }
+
+      .frame .icon-arrow-left {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 48px;
+        left: 52px;
+      }
+
+      .frame .text-content {
+        position: absolute;
+        width: 465px;
+        height: 181px;
+        top: 110px;
+        left: 152px;
+      }
+
+      .frame .title {
+        position: relative;
+        width: 469px;
+        height: 181px;
+      }
+
+      .frame .text-wrapper {
+        position: absolute;
+        width: 465px;
+        top: 0;
+        left: 0;
+        font-family: var(--bold-60px-font-family);
+        font-weight: var(--bold-60px-font-weight);
+        color: var(--basewhite);
+        font-size: var(--bold-60px-font-size);
+        letter-spacing: var(--bold-60px-letter-spacing);
+        line-height: var(--bold-60px-line-height);
+        font-style: var(--bold-60px-font-style);
+      }
+
+      .frame .connecting-people {
+        position: absolute;
+        width: 430px;
+        top: 151px;
+        left: 0;
+        font-family: var(--regular-18px-font-family);
+        font-weight: var(--regular-18px-font-weight);
+        color: var(--blue-gray300);
+        font-size: var(--regular-18px-font-size);
+        letter-spacing: var(--regular-18px-letter-spacing);
+        line-height: var(--regular-18px-line-height);
+        font-style: var(--regular-18px-font-style);
+      }
+
+      .frame .input-content {
+        position: absolute;
+        width: 526px;
+        height: 568px;
+        top: 110px;
+        left: 812px;
+      }
+
+      .frame .div-wrapper {
+        position: absolute;
+        width: 402px;
+        height: 62px;
+        top: 0;
+        left: 0;
+      }
+
+      .frame .text-wrapper-2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-family: var(--bold-52px-font-family);
+        font-weight: var(--bold-52px-font-weight);
+        color: var(--base-02);
+        font-size: var(--bold-52px-font-size);
+        letter-spacing: var(--bold-52px-letter-spacing);
+        line-height: var(--bold-52px-line-height);
+        white-space: nowrap;
+        font-style: var(--bold-52px-font-style);
+      }
+
+      .frame .input {
+        position: absolute;
+        width: 526px;
+        height: 222px;
+        top: 132px;
+        left: 0;
+      }
+
+      .frame .email {
+        position: absolute;
+        width: 526px;
+        height: 48px;
+        top: 0;
+        left: 0;
+      }
+
+      .frame .BG-2 {
+        position: absolute;
+        width: 526px;
+        height: 48px;
+        top: 0;
+        left: 0;
+        border-radius: 12px;
+        background-color: var(--blue-gray50);
+        border: 1px solid var(--blue-gray400);
+      }
+
+      .frame .text-wrapper-3 {
+        position: absolute;
+        top: 12px;
+        left: 24px;
+        font-family: var(--semi-bold-16px-font-family);
+        font-weight: var(--semi-bold-16px-font-weight);
+        color: var(--blue-gray400);
+        font-size: var(--semi-bold-16px-font-size);
+        letter-spacing: var(--semi-bold-16px-letter-spacing);
+        line-height: var(--semi-bold-16px-line-height);
+        white-space: nowrap;
+        font-style: var(--semi-bold-16px-font-style);
+      }
+
+      .frame .password {
+        position: absolute;
+        width: 526px;
+        height: 48px;
+        top: 87px;
+        left: 0;
+      }
+
+      .frame .text {
+        position: absolute;
+        width: 526px;
+        height: 48px;
+        top: 174px;
+        left: 0;
+      }
+
+      .frame .check {
+        position: absolute;
+        width: 116px;
+        height: 18px;
+        top: 0;
+        left: 0;
+      }
+
+      .frame .text-wrapper-4 {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 186px;
+        align-items: center;
+        font-family: var(--regular-13px-font-family);
+        font-weight: var(--regular-13px-font-weight);
+        color: var(--gray-900);
+        font-size: var(--regular-13px-font-size);
+        letter-spacing : var(--regular-13px-letter-spacing);
+        line-height: var(--regular-13px-line-height);
+        white-space: nowrap;
+        font-style: var(--regular-13px-font-style);
+      }
+
+      .frame .shape {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        top: 0;
+        left: 0;
+        background-color: var(--blue-gray50);
+        border-radius: 4px;
+        border: 1px solid;
+        border-color: var(--blue-gray400);
+      }
+
+      .frame .text-wrapper-5 {
+        position: absolute;
+        top: 0;
+        left: 460px;
+        text-decoration: none;
+        font-family: var(--regular-13px-font-family);
+        font-weight: var(--regular-13px-font-weight);
+        color: var(--baseblack);
+        font-size: var(--regular-13px-font-size);
+        letter-spacing: var(--regular-13px-letter-spacing);
+        line-height: var(--regular-13px-line-height);
+        white-space: nowrap;
+        font-style: var(--regular-13px-font-style);
+      }
+
+      .button-primary-with {
+        position: absolute;
+        width: 160px;
+        height: 48px;
+        top: 250px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .btn-login {
+        width: 100%;
+        height:100%;
+        display: inline-block;
+        padding: 10px 20px;
+        background-color:var(--blue-600); /* Same background color as login */
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px; /* Rounded corners */
+        margin-top: 10px;
+        align-items: center;
+    }
+    
+    .btn-login:hover {
+        background-color: #0056b3;}
+      .button-name-wrapper {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+        background-color: var(--blue-600);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .button-name {
+        font-family: var(--bold-16px-font-family);
+        font-weight: var(--bold-16px-font-weight);
+        color: var(--basewhite);
+        font-size: var(--bold-16px-font-size);
+        letter-spacing: var(--bold-16px-letter-spacing);
+        line-height: var(--bold-16px-line-height);
+        white-space: nowrap;
+        font-style: var(--bold-16px-font-style);
+      }
+      input{
+        border:none;
+        outline: none;
+        background-color:transparent;
+      }
+      button{
+        border:none;
+        outline: none;
+        background-color: transparent;
+        color:white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      .btn-signup {
+        width: 100%;
+        height:100%;
+        display: inline-block;
+        padding: 10px 20px;
+        background-color:var(--blue-600); /* Same background color as login */
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px; /* Rounded corners */
+        margin-top: 10px;
+        align-items: center;
+    }
+    
+    .btn-signup:hover {
+        background-color: #0056b3; /* Darker shade on hover */
+    }
+    #popup {
+      display: none; /* Keep this to hide the popup by default */
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      z-index: 1000; /* Add this to make the popup appear on top of other elements */
+    }
+    
+    #popup-message {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    #popup-close {
+      background-color: #ccc;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    
+    #popup-close:hover {
+      background-color: #aaa;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="div">
+        <div class="overlap-group">
+          <div class="BG">
+          </div>
+          <div class="text-content">
+            <div class="title">
+              <div class="text-wrapper">Welcome to our community</div>
+              <div class="connecting-people">Connecting people.</div>
+            </div>
+          </div>
+        </div>
+        <div class="input-content">
+          <div class="div-wrapper">
+            <div class="text-wrapper-2">Welcome back!</div>
+          </div>
+          <form action="{{url_for('emplogin')}}" method="POST">
+          <div class="input">
+            <div class="email">
+              <div class="BG-2"></div>
+              <div class="text-wrapper-3">
+                <input type="email" name="email" placeholder="Enter your Email">
+              </div>
+            </div>
+            <div class="password">
+              <div class="BG-2"></div>
+              <div class="text-wrapper-3">
+                <input type="password" name="password" placeholder="Enter your Password"></div>
+            </div>
+            <div class="text">
+              <div class="check">
+                <div class="text-wrapper-4">
+                  <a href="{{url_for('empreg')}}" class="btn-signup">Signup</a>
+                </div>
+            </div>
+          </div>
+          <div class="button-primary-with">
+            <div class="button-name-wrapper">
+              <div class="button-name">
+                <button type="submit">&nbsp;Login&nbsp;</button>
+              </div>
+            </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="popup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);">
+      <p id="popup-message"></p>
+      <button id="popup-close">Close</button>
+    </div>
+    <script>
+      $(document).ready(function() {
+        $('form').submit(function(event) {
+          event.preventDefault();
+          var email = $('input[name="email"]').val();
+          var password = $('input[name="password"]').val();
+          $.ajax({
+            type: 'POST',
+            url: $(this).attr('action'),
+            data: {email: email, password: password},
+            success: function(data) {
+              if (data.success) {
+                $('#popup-message').text('Login successful!');
+              } else {
+                $('#popup-message').text('Invalid email or password!');
+              }
+              $('#popup').fadeIn(); // Add this line to show the popup
+            }
+          });
+        });
+        $('#popup-close').click(function() {
+          $('#popup').fadeOut(); // Add this line to hide the popup
+        });
+      });
+    </script>
+  </body>
+</html>

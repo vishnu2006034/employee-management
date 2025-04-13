@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background:  #007BFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: sans-serif;
+            color: white;
+        }
+
+        .bubbles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .bubble {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            animation: bubble-animation 5s linear infinite;
+        }
+
+        @keyframes bubble-animation {
+            0% {
+                transform: translate(0, 0) scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: translate(0, -50px) scale(1.2);
+                opacity: 0.7;
+            }
+            100% {
+                transform: translate(0, -100px) scale(1.5);
+                opacity: 0;
+            }
+        }
+
+        .container {
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        button {
+            background-color: white;
+            color:  var(--basewhite);
+            a{text-decoration: none;}
+            size: 18px;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            margin: 0.5rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>sign in to your account</h1>
+        <p>connecting people.</p>
+        <button><a href="{{url_for('emplogin')}}">login as employee</a></button>
+        <button><a href="{{url_for('manpage')}}">login as admin</a></button>
+    </div>
+    <div class="bubbles">
+        <div class="bubble" style="width: 20px; height: 20px; top: 20%; left: 10%; animation-duration: 4s;"></div>
+        <div class="bubble" style="width: 30px; height: 30px; top: 60%; left: 30%; animation-duration: 3s;"></div>
+        <div class="bubble" style="width: 15px; height: 15px; top: 80%; left: 70%; animation-duration: 5s;"></div>
+        <div class="bubble" style="width: 40px; height: 40px; top: 40%; left: 90%; animation-duration: 6s;"></div>
+        <div class="bubble" style="width: 25px; height: 25px; top: 10%; left: 60%; animation-duration: 7s;"></div>
+        <div class="bubble" style="width: 18px; height: 18px; top: 50%; left: 20%; animation-duration: 2s;"></div>
+        <div class="bubble" style="width: 35px; height: 35px; top: 70%; left: 40%; animation-duration: 4s;"></div>
+        <div class="bubble" style="width: 22px; height: 22px; top: 30%; left: 80%; animation-duration: 5s;"></div>
+    </div>
+</body>
+</html>

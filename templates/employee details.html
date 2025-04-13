@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #3a95eb; /* Light blue Nokia background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .employee-card {
+            background-color: #fff; /* White background for the card */
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            width: 350px;
+            text-align: left;
+            padding: 25px;
+            transition: transform 0.3s ease; /* Card hover effect */
+        }
+
+        .employee-card:hover {
+            transform: scale(1.03); /* Slightly enlarge the card on hover */
+        }
+
+        .employee-photo img {
+            display: block;
+            margin: 0 auto 20px; /* Center the image */
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Circle shape for the photo */
+            object-fit: cover;
+            border: 2px solid #0078d4; /* Thin blue border */
+            transition: box-shadow 0.3s ease; /* Photo hover effect */
+        }
+
+        .employee-photo img:hover {
+            box-shadow: 0 0 15px rgba(0, 120, 212, 0.7); /* Blue glow effect on image hover */
+        }
+
+        .employee-info h2 {
+            font-size: 24px;
+            text-align: center;
+            margin: 0 0 15px 0;
+            color: #0078d4; /* Nokia Blue for name */
+        }
+
+        .employee-info p {
+            font-size: 16px;
+            color: #555;
+            margin: 10px 0;
+        }
+
+        .employee-info p strong {
+            display: inline-block;
+            width: 110px; /* Align labels to the left */
+            color: #0078d4; /* Nokia Blue for labels */
+        }
+
+        .contact-button {
+            background-color: #0078d4;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            display: block;
+            margin: 20px auto;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Button hover effect */
+        }
+
+        .contact-button:hover {
+            background-color: #005a99; /* Darker blue on button hover */
+        }
+
+        .employee-info a {
+            color: #0078d4;
+            text-decoration: none;
+            transition: color 0.3s ease; /* Link hover effect */
+        }
+
+        .employee-info a:hover {
+            color: #004a80; /* Darker blue on link hover */
+        }
+        #myForm{
+            display:none;
+        }
+    </style>
+    <script>
+        function showForm(){
+            var form=document.getElementById("myForm");
+            form.style.display="block";
+        }
+    </script>
+</head>
+<body>
+    <div class="employee-card">
+        <div class="employee-photo">
+            <img src="{{img}}" alt="Employee Photo">
+        </div>
+        <div class="employee-info">
+                <h2>{{emp.name}}</h2>
+                <p><strong>ID:</strong> {{emp.id}}</p>
+                <p><strong>Email:</strong> <a href="mailto:john.doe@example.com">{{emp.email}}</a></p>
+                <p><strong>Department:</strong>{{emp.department}}</p>
+                <p><strong>Contact:</strong>{{emp.contact}}</p>
+                <p><strong>Age:</strong>{{emp.age}}</p>
+                <p><strong>Gender:</strong>{{emp.gender}}</p>
+                <button class="contact-button" onclick="showForm()">Assign Task</button>
+        </div>
+        <form id="myForm" action="{{url_for('emp',emp_id=emp.id)}}" method="POST">
+            <input type="text" name="content">
+            <br>
+            <input type="datetime-local" name="duetime" placeholder="Due time">
+            <br>
+            <input type="submit" value="Assign">
+        </form>
+    </div>
+</body>
+</html>

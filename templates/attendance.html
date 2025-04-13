@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Attendance System</title>
+    <script src="{{url_for('static',filename='js/html5-qrcode.min.js')}}"></script>
+</head>
+<body>
+    <h1>QR Code Attendance System</h1>
+
+    <div style="width: 500px;" id="reader" align-item="center"></div>
+    <div id="result"></div>
+
+    <script>
+        // Initialize the QR scanner
+        const html5QrCode = new Html5Qrcode("reader");
+
+        function onScanSuccess(decodedText, decodedResult) {
+            // Handle the QR code scan result here
+            console.log("QR code scanned: " + decodedText);
+
+            // Send the scanned QR code (username) to the backend
+            fetch('/attend', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ username: decodedText })
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Display the attendance result
+                document.getElementById("result").innerText = data.message;
+            })
+            .catch(error => {
+                console.error('Error marking attendance:', error);
+            });
+
+            // Stop scanning after a successful scan
+            html5QrCode.stop().then(() => {
+                console.log("QR Code scanning stopped.");
+            }).catch(err => {
+                console.error("Failed to stop scanning:", err);
+            });
+        }
+
+        function onScanFailure(error) {
+            // Handle scan failure
+            console.warn("QR code scan failed:" + error);
+        }
+
+        // Start scanning with the front-facing camera
+        html5QrCode.start({ facingMode: "environment" }, { fps: 10, qrbox: 250 }, onScanSuccess, onScanFailure);
+    </script>
+</body>
+</html>

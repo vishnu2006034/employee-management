@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .dashboard-container {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 250px;
+            background: #007BFF;
+            color: white;
+            padding: 20px;
+            height: 130vh;
+            text-align: center; /* Center the profile picture */
+        }
+
+        .profile-picture-container {
+            margin-bottom: 20px;
+        }
+
+        .sidebar-profile-pic {
+            border-radius: 50%;
+            width: 100px; /* Adjust size as needed */
+            height: 100px; /* Adjust size as needed */
+        }
+
+        .sidebar nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar nav ul li {
+            margin: 20px 0;
+        }
+
+        .sidebar nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .sidebar nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        .header {
+            background: #007BFF;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .profile {
+            background: white;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .profile-header {
+            display: flex;
+            align-items: center; /* Center vertically */
+        }
+
+        .rectangular-picture-container {
+            margin-right: 20px;
+        }
+
+        .rectangular-pic {
+            width: 200px; /* Width of the rectangular picture */
+            height: 200px; /* Height of the rectangular picture */
+            border: 2px solid #007BFF; /* Frame color */
+            border-radius: 5px; /* Rounded corners */
+            place-items: center;
+        }
+
+        .profile-info {
+            flex-grow: 1;
+        }
+
+        .contact-info {
+            margin-top: 20px; /* Space between picture and contact info */
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            gap: 10px; /* Space between items */
+        }
+        .rectangular-picture-container{
+            display: grid;
+            place-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="profile-picture-container">
+                <img src="{{img}}" alt="Profile Picture" class="sidebar-profile-pic">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="{{url_for('assign')}}">Tasks</a></li>
+                    <li><a href="{{url_for('shiftshow')}}">Shift</a></li>
+                    <li><a href="{{url_for('attend')}}">Enter Attendance</a></li><br>
+                    <li><a href="{{url_for('logout')}}">Logout</a></li>
+                    
+
+
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="header">
+                <h1>Welcome, {{current_user.name}}</h1>
+            </header>
+            <section class="profile">
+                <div class="profile-header">
+                    <div class="rectangular-picture-container">
+                        <img src="{{img}}" alt="Rectangular Employee Picture" class="rectangular-pic">
+                    </div>
+                    <div class="profile-info">
+                        <h2></h2>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    
+                    <p><strong>ID:</strong>{{current_user.id}}</p>
+                    <p><strong>Name:</strong>{{current_user.name}}</p>
+                    <p><strong>Email:</strong>{{current_user.email}}</p>
+                    <p><strong>Department:</strong>{{current_user.department}}</p>
+                    <p><strong>Age:</strong>{{current_user.age}}</p>
+                    <p><strong>Gender:</strong>{{current_user.gender}}</p>
+                    <p><strong>Contact:</strong>{{current_user.contact}}</p>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

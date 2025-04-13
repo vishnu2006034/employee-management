@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #007BFF;
+            margin: 0;
+            padding: 20px;
+        }
+        .bubbles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .bubble {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            animation: bubble-animation 5s linear infinite;
+        }
+
+        @keyframes bubble-animation {
+            0% {
+                transform: translate(0, 0) scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: translate(0, -50px) scale(1.2);
+                opacity: 0.7;
+            }
+            100% {
+                transform: translate(0, -100px) scale(1.5);
+                opacity: 0;
+            }
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 300px;
+            max-height: 1000px;
+            margin: auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007BFF;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            margin: 0;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        input[type="number"],
+        select,
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #007BFF;
+            border-radius: 4px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="file"] {
+            border: none;
+        }
+
+        input:focus,
+        select:focus {
+            border-color: #0056b3;
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            button {
+                font-size: 14px;
+            }
+        }
+
+        /* Error Styles */
+        .error {
+            color: red;
+            margin-top: 5px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Login</h1>
+        <form action="{{url_for('empreg')}}" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id=" name" name="name" required aria-label="Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required aria-label="Email">
+            </div>
+            <div class="form-group">
+                <label for="department">Department:</label>
+                <select id="department" name="dep" required aria-label="Department">
+                    <option value="">Select Department</option>
+                    <option value="HR">HR</option>
+                    <option value="IT">IT</option>
+                    <option value="Sales">Sales</option>
+                    <option value="Marketing">Marketing</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="contact">Contact:</label>
+                <input type="tel" id="contact" name="contact" maxlength="10" pattern="\d{10}" inputmode="numeric" aria-label="Contact">
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="1" max="100" required aria-label="Age">
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required aria-label="Gender">
+                    <option value="">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="photo">Photo:</label>
+                <input type="file" id="photo" name="picture" accept="image/*" required aria-label="Photo">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required aria-label="Password">
+            </div>
+            <button type="submit">Sign In</button>
+        </form>
+    </div>
+    <div class="bubbles">
+        <div class="bubble" style="width: 20px; height: 20px; top: 20%; left: 10%; animation-duration: 4s;"></div>
+        <div class="bubble" style="width: 30px; height: 30px; top: 60%; left: 30%; animation-duration: 3s;"></div>
+        <div class="bubble" style="width: 15px; height: 15px; top: 80%; left: 70%; animation-duration: 5s;"></div>
+        <div class="bubble" style="width: 40px; height: 40px; top: 40%; left: 90%; animation-duration: 6s;"></div>
+        <div class="bubble" style="width: 25px; height: 25px; top: 10%; left: 60%; animation-duration: 7s;"></div>
+        <div class="bubble" style="width: 18px; height: 18px; top: 50%; left: 20%; animation-duration: 2s;"></div>
+        <div class="bubble" style="width: 35px; height: 35px; top: 70%; left: 40%; animation-duration: 4s;"></div>
+        <div class="bubble" style="width: 22px; height: 22px; top: 30%; left: 80%; animation-duration: 5s;"></div>
+    </div>
+</body>
+</html>
